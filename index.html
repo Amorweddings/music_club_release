@@ -750,7 +750,6 @@
 
                 // Find assets
                 const apk = release.assets.find(a => a.name.endsWith('.apk'));
-                const exe = release.assets.find(a => a.name.endsWith('.exe'));
                 const msix = release.assets.find(a => a.name.endsWith('.msix'));
 
                 const formatSize = (bytes) => {
@@ -776,34 +775,18 @@
                     </div>`;
                 }
 
-                if (exe) {
-                    html += `
-                    <div class="download-card">
-                        <div class="card-icon windows">🖥️</div>
-                        <h3>Windows (EXE)</h3>
-                        <p class="card-desc">Portable executable for Windows 10/11. No installation required — just run.</p>
-                        <div class="card-meta">
-                            <span>📦 ${formatSize(exe.size)}</span>
-                            <span>⬇️ ${exe.download_count} downloads</span>
-                        </div>
-                        <a href="${exe.browser_download_url}" class="download-btn primary">
-                            ⬇ Download EXE
-                        </a>
-                    </div>`;
-                }
-
                 if (msix) {
                     html += `
                     <div class="download-card">
-                        <div class="card-icon msix">📀</div>
-                        <h3>Windows (MSIX)</h3>
+                        <div class="card-icon windows">🖥️</div>
+                        <h3>Windows</h3>
                         <p class="card-desc">MSIX installer for Windows 10/11. Installs cleanly with system integration.</p>
                         <div class="card-meta">
                             <span>📦 ${formatSize(msix.size)}</span>
                             <span>⬇️ ${msix.download_count} downloads</span>
                         </div>
                         <a href="${msix.browser_download_url}" class="download-btn primary">
-                            ⬇ Download MSIX
+                            ⬇ Download for Windows
                         </a>
                     </div>`;
                 }
