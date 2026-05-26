@@ -1,3 +1,10 @@
+## [1.5.0] - 2026-05-26
+
+- **Auto Updater**: Added a new "Updates" section in the Settings screen allowing users to check for app updates and update the app if a new version is available.
+- **Lazy Loading**: Added lazy loading to the Explore screen to improve performance.
+
+
+
 ## [1.3.0] - 2026-05-26
 
 ### Added
