@@ -1,3 +1,27 @@
+## [1.3.0] - 2026-05-26
+
+### Added
+- **Devotional Preferences**: Added a new "Devotional Preference" grid UI in User Preferences settings. Users can opt-in to see devotional songs by selecting their preferred religion categories.
+- **Share & Support**: Added "Share App" and "Support Developer" options in the Settings screen, allowing users to share the app or donate via UPI.
+
+### Changed
+- **UI/UX**: Pinned the top navigation bar (`CustomDiscoverBar`) on the Explore screen so it remains visible while scrolling.
+- **Plugin Management**: Removed the manual Plugin settings UI. Required plugins (`ytmusic`, `jisaavn`, `lrcnet`) are now automatically loaded via code.
+- **Home Suggestions**: Dynamic suggestions on the home screen now accurately reflect user's language and artist preferences across app restarts.
+- **Content Filtering**: Strictly filtered home suggestions to include only pure music tracks, completely preventing movie video clips or scenes from appearing.
+- **Performance**: Optimized dynamic recommendation fetching to execute sequentially, fixing `TimeoutException` and endless loading issues on the Explore screen.
+- **Desktop Fixes**: Resolved a bug causing `PlayerErrorType.networkDropped` on Desktop by preventing duplicate concurrent network requests during plugin cascade loading.
+
+## [1.2.0] - 2026-05-25
+
+### Added
+- **Windows MSIX Support**: Added msix configuration and dependency for Windows app packaging.
+- **Android Keystore**: Configured keystore for release builds.
+
+### Changed
+- **Settings UI**: Updated User Preferences settings page (Preferred Languages, Favorite Artists) to use collapsible sections matching the overall app settings style.
+- **L10n Permissions**: Fixed read-only permission issues in the localization directory.
+
 ## [1.1.0] - 2026-05-24
 
 ### Removed
@@ -17,13 +41,4 @@
 - Updated app launcher icon and fixed missing asset reference issues.
 - Improved Home Screen recommendations to prioritize user preferences and filter out disliked songs.
 
-## [1.2.0] - 2026-05-25
-
-### Added
-- **Windows MSIX Support**: Added msix configuration and dependency for Windows app packaging.
-- **Android Keystore**: Configured keystore for release builds.
-
-### Changed
-- **Settings UI**: Updated User Preferences settings page (Preferred Languages, Favorite Artists) to use collapsible sections matching the overall app settings style.
-- **L10n Permissions**: Fixed read-only permission issues in the localization directory.
 
