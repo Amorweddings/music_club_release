@@ -1,9 +1,22 @@
-## [1.5.0] - 2026-05-26
+## [1.6.0] - 2026-05-30
 
-- **Auto Updater**: Added a new "Updates" section in the Settings screen allowing users to check for app updates and update the app if a new version is available.
-- **Lazy Loading**: Added lazy loading to the Explore screen to improve performance.
+### Added
+- **Auto Updater**: Added a new "Updates" section in the Settings screen to easily check for and install new app versions.
+- **Playlist Creation**: Introduced a new intuitive widget dialog for easily creating and managing custom playlists.
+- **Shared URL Resolver**: Added early-stage support for resolving shared track and playlist URLs directly within the app.
+- **Data Backup Support**: Added backward compatibility for restoring older version backups (JSON and Isar formats).
 
+### Changed & Improved
+- **Lazy Loading**: Implemented lazy loading on the Explore screen for faster rendering and improved performance.
+- **Search Enhancements**: Improved search suggestions for a more accurate, responsive, and relevant search experience.
+- **Playback Stability**: Stabilized playback startup routines and optimized the plugin bridge for smoother streaming.
+- **UI & Localization**: Tweaked various UI elements for better aesthetics and completely refactored the app's localization system.
 
+### Fixed
+- **Playlist Misalignment**: Fixed an issue where tapping a track in a playlist played the wrong song by correctly remapping the track index.
+- **Offline Artwork**: Fixed a bug causing missing album artwork for downloaded songs, ensuring images are always visible offline.
+- **Up-Next Panel**: Resolved a visual glitch in the Up-Next queue panel specific to Android views.
+- **UPI Support**: Fixed an issue on Android 11+ where UPI donation links failed to open by bypassing restrictive intent visibility checks.
 
 ## [1.3.0] - 2026-05-26
 

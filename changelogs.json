@@ -1,5 +1,26 @@
 [
   {
+    "version": "1.6.0",
+    "date": "2026-05-29",
+    "changes": {
+      "added": [
+        "Settings Tab: Settings moved to the bottom navigation bar — accessible from all screens without going through the explore screen.",
+        "Plugin Auto-Update on Startup: Plugins (including YouTube cipher) are checked and updated every time the app launches via a startup overlay.",
+        "Plugin Auto-Load: All installed plugins now load automatically on startup."
+      ],
+      "changed": [
+        "Desktop Layout: UpNext panel moved to the left side on Windows; player UI on the right.",
+        "Downloads Screen: Title renamed from 'Offline' to 'Downloads'.",
+        "HTTP Timeouts: Reduced plugin adapter request timeouts from 30s to 10s with a 5s connect timeout for faster failure detection.",
+        "Plugin Sync Gap: Plugin update check now runs on every app launch instead of being gated behind a 30-minute cooldown."
+      ],
+      "fixed": [
+        "YouTube Playback: Removed the 12-second timeout on stream resolution that was causing YouTube playback failures.",
+        "Plugin Updates: Plugins were not updating automatically — sync now runs on every startup."
+      ]
+    }
+  },
+  {
     "version": "1.2.0",
     "date": "2026-05-25",
     "changes": {
