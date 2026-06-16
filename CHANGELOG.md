@@ -1,3 +1,25 @@
+## [1.6.40] - 2026-06-16
+
+### Added
+- **Cloud Synchronization**: Added secure, automatic saving of your listening history and favorites to the cloud without needing a password.
+- **Cross-Platform Sync**: Full support for syncing your data on Windows, macOS, and Linux desktop apps.
+- **Instant Playlist Loading**: Playlists are now stored locally, making them load instantly upon opening the app even if you are offline.
+
+### Changed & Improved
+- **Personalized Mixes**: Revamped the playlist engine to curate better mixes based on your favorite music styles, mood tags, and tempo.
+- **Language Preferences**: Smartly prioritizes songs in your selected languages (like Malayalam, English, etc.) for custom recommendations.
+
+## [1.6.30] - 2026-06-15
+
+### Added
+- **Settings Redesign**: Completely overhauled the Settings screen with a modern, grid-based UI layout.
+- **Mini Player**: Added vertical swipe gestures (up/down) to easily close or dismiss the mini player card.
+- **Advertisements (Rewarded)**: Integrated Google AdMob to show a 30-second rewarded ad once every 6 hours before playing a new track.
+- **Advertisements (Native)**: Added inline Native Ads to the Explore screen using `NativeTemplateStyle` for a seamless UI experience.
+
+### Changed & Improved
+- **Windows Packaging**: Switched the Windows app builder from MSIX to Inno Setup, now producing standard executable (.exe) installers.
+
 ## [1.6.0] - 2026-05-30
 
 ### Added
