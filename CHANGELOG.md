@@ -1,4 +1,4 @@
-## [1.6.40] - 2026-06-16
+## [1.6.45] - 2026-06-16
 
 ### Added
 - **Cloud Synchronization**: Added secure, automatic saving of your listening history and favorites to the cloud without needing a password.
@@ -8,6 +8,7 @@
 ### Changed & Improved
 - **Personalized Mixes**: Revamped the playlist engine to curate better mixes based on your favorite music styles, mood tags, and tempo.
 - **Language Preferences**: Smartly prioritizes songs in your selected languages (like Malayalam, English, etc.) for custom recommendations.
+- **Bug Fixes & UI Improvements**: General stability improvements and UI enhancements.
 
 ## [1.6.30] - 2026-06-15
 
